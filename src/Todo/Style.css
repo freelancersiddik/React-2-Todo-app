@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: rgb(170, 156, 156);
+  letter-spacing: .3px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* main container */
+.container-fluid {
+  width: 100vw;
+  min-height: 100vh;
+  /* background: #014f86; */
+  background: #2c7da0;
+  animation: AllS 2s linear infinite;
+}
+@keyframes AllS {
+  0% {
+    background: #2c7da0;
+    transform-origin: 0%;
+  }
+  50% {
+    background: #017f86d0;
+  }
+  100% {
+    background: #2c7da0;
+  }
+}
+
+/* input box */
+.inputbox {
+  width: 50%;
+  margin: 0 auto;
+}
+.todoInput {
+  width: 300px;
+}
+.btn {
+  margin-left: 4px !important;
+}
+/* items box */
+.row {
+  margin-top: 1em;
+  overflow-y: auto;
+  height: 60vh;
+}
+.row {
+  margin: 2em 0;
+}
+.btn-box {
+  display: none;
+}
+.card {
+  position: relative;
+  height: 170px;
+}
+.card-title {
+  min-height: max-content;
+  height: 150px;
+  overflow-y: auto;
+}
+.card:nth-child(even) {
+  background: #000;
+  color: #eee;
+}
+.card:hover *.btn-box {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+/* .btn-box{
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+} */
+
+@media screen and (max-width: 768px) {
+  .inputbox {
+    width: 95%;
+  }
+
+  .card {
+    position: relative;
+    height: 160px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 90%;
+  }
+  .card-title {
+    min-height: max-content;
+    height: 140px;
+    overflow-y: auto;
+  }
+}
