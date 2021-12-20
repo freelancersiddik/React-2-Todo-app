@@ -3,7 +3,7 @@ import Notes from "./Todo/Notes";
 const App = () => {
   return (
     <>
-      <Notes />
+      <Notes/>
     </>
   );
 };

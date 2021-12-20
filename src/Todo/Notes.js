@@ -75,7 +75,9 @@ const Notes = () => {
       <p className="text-end text-capitalize">
         created by{" "}
         <span className="fw-bold text-white">
-          <a href="http://siddikhp.herokuapp.com/">Siddik</a>
+          <a href="http://siddikhp.herokuapp.com/" target="_asdblank">
+            Siddik
+          </a>
         </span>{" "}
       </p>
       <h2 className="pb-2 text-center">Your Notes are Safe Here </h2>
